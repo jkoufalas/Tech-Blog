@@ -47,6 +47,63 @@ The link to the deployed website of the assignment is <br>
 
 ---
 
+## Install Instructions
+
+The dependancies are listed within the package.json file. The dependancies for this application are
+
+- sequelize
+- dotenv
+- mysql2
+- expressjs
+- express-session
+- handlebars.js
+
+Since the dependancies are listed within the lock file, they will autmatically installed with the following command
+
+```
+npm i
+```
+
+---
+
+## Executing Instructions
+
+```
+node index.js
+```
+
+Utilize the command prompts and the application will prompt you for any information it needs to fullfill the requests you have made.
+
+---
+
+## Database Information
+
+The user must have a MySQL database installed on the machine they are running the application on.
+
+The schema for the database is included in the db folder and can be included by running the command
+
+```
+mysql> source db/schema.sql
+```
+
+The seed data if required can be inserted into the database by using the index.js file in the seeds folder and inserted by running the command.
+
+```
+> node seeds/seed.js
+```
+
+The information used to connect to the database is currently implemented with the dotenv package. To include the correct information to connect to the database corretly the following the user needs to create a .env file and add the following data.
+
+```
+    DB_NAME="tech_blog_db"
+    DB_PW="your_password"
+    DB_USER="your_user"
+```
+
+If the user doesn't want to use the dotenv package, then they can simply replace these variable in the server.js file with the hard coded values that these variables are storing.
+
+---
+
 ## Screenshot
 
 This image provides a sample of the completed website.
