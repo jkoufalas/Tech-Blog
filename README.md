@@ -36,6 +36,9 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 ## Table of Contents
 
 - [Deployed Link](#Link)
+- [Install Instructions](#install-instructions)
+- [Executing Instructions](#executing-instructions)
+- [Database Information](#database-information)
 - [Screenshot](#Screenshot)
 
 ---
@@ -43,7 +46,7 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 ## Link
 
 The link to the deployed website of the assignment is <br>
-[https://jkoufalas.github.io/Work-Day-Scheduler/index.html](https://jkoufalas.github.io/Work-Day-Scheduler/index.html)
+[https://nameless-peak-21981.herokuapp.com/](https://nameless-peak-21981.herokuapp.com/)
 
 ---
 
@@ -108,4 +111,22 @@ If the user doesn't want to use the dotenv package, then they can simply replace
 
 This image provides a sample of the completed website.
 
-![Work Day Scheduler](./assets/Images/work-day-scheduler.jpg)
+### HomeScreen
+
+![HomeScreen](./assets/Images/homescreen.png)
+
+### Create
+
+![Create](./assets/Images/create.png)
+
+### Login
+
+![Login](./assets/Images/login.png)
+
+### Post
+
+![Post](./assets/Images/post.png)
+
+### Update
+
+![Update](./assets/Images/update.png)
