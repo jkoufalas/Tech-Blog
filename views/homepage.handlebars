@@ -1,0 +1,26 @@
+<!-- Loop over each post to display -->
+<!-- format of each post -->
+
+<div class='post'>
+  {{#each posts as |post|}}
+
+    <div class='col m-6'>
+      <div
+        class='row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative'
+      >
+        <div class='col p-4 d-flex flex-column position-static'>
+          <button
+            class='d-inline-block mb-2 text-primary'
+            post='{{post.id}}'
+          >{{post.title}}</button>
+          <div class='mb-1 text-muted'>Posted by
+            {{post.user.username}}
+            on
+            {{format_date post.date_created}}</div>
+          <p class='card-text mb-auto'>{{post.content}}</p>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>
+<script src='./js/enterPost.js'></script>

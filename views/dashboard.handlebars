@@ -1,0 +1,29 @@
+<!-- Loop over each object in the posts array, of which the user created -->
+<div class='post'>
+  {{#each posts as |post|}}
+    <!-- each element in array is presented as post -->
+    <div class='col m-6'>
+      <div
+        class='row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative'
+      >
+        <div class='col p-4 d-flex flex-column position-static'>
+          <button
+            class='d-inline-block mb-2 text-primary'
+            post='{{post.id}}'
+          >{{post.title}}</button>
+          <div class='mb-1 text-muted'>Posted by
+            {{post.user.username}}
+            on
+            {{format_date post.date_created}}</div>
+          <p class='card-text mb-auto'>{{post.content}}</p>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>
+<br />
+<button class='w-100 btn btn-lg btn-primary' id='new-post'>New Post</button>
+
+<!-- Modularising javascripts for new button and edit post redirects -->
+<script src='../js/new-post.js'></script>
+<script src='../js/editPost.js'></script>

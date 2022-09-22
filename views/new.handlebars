@@ -1,0 +1,29 @@
+<!-- form for new post -->
+<div class='text-center'>
+  <div class='form-new'>
+    <form class='new-form'>
+      <h1 class='h5 mb-3 fw-normal'>Create Post</h1>
+      <!-- form title input -->
+      <div class='form-floating'>
+        <input type='text' class='form-control' id='new-title' />
+        <label for='floatingInput'>Title</label>
+      </div>
+      <br />
+      <!-- form content input -->
+      <div class='form-floating'>
+        <textarea
+          type='text'
+          class='form-control'
+          id='new-content'
+          style='height: 150px;'
+        ></textarea>
+        <label for='floatingInput'>Content</label>
+      </div>
+      <br />
+      <!-- form submit button  -->
+      <button class='w-100 btn btn-lg btn-primary' type='submit'>Create</button>
+    </form>
+  </div>
+</div>
+
+<script src='../js/createPost.js'></script>

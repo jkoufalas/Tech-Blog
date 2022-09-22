@@ -1,0 +1,32 @@
+<!-- form which renders the current data for post ready for update -->
+
+<div class='text-center'>
+  <div class='form-update'>
+    <!-- form object -->
+    <form class='update-form' post="{{post.id}}">
+      <h1 class='h5 mb-3 fw-normal'>Edit Post</h1>
+      <!-- post title -->
+      <div class='form-floating'>
+        <input type='text' class='form-control' id='update-title' value='{{post.title}}'>
+        <br>
+        <label for='floatingInput'>Title</label>
+      </div>
+      <!-- post content -->
+      <div class='form-floating'>
+        <textarea
+          name="content"
+          class='form-control'
+          id='update-content'
+          style="height: 150px;"
+        >{{post.content}}</textarea>
+        <label for='content'>Content</label>
+      </div>
+      <br>
+      <!-- Submit button -->
+      <button class='w-100 btn btn-lg btn-primary' type='submit'>Update</button>
+    </form>
+    <!-- Button for delete outside form object -->
+    <button class='w-100 btn btn-lg btn-primary' id="delete">Delete</button>
+  </div>
+
+<script src='../../js/updatePost.js'></script>

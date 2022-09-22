@@ -1,0 +1,62 @@
+<!-- page to display a post and its comments -->
+
+<!-- display post -->
+<div class='post' post='{{post.id}}'>
+  <div class='col m-6'>
+    <div
+      class='row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative'
+    >
+      <div class='col p-4 d-flex flex-column position-static'>
+        <button class='d-inline-block mb-2 text-primary'>{{post.title}}</button>
+        <div class='mb-1 text-muted'>Posted by
+          {{post.user.username}}
+          on
+          {{format_date post.date_created}}</div>
+        <p class='card-text mb-auto'>{{post.content}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class='text-center h3 bold'>
+  Comments
+</div>
+<!-- Area to display comments -->
+{{#each post.comments as |comment|}}
+  <!-- loop each comment diplay information in each -->
+  <div class='col m-6'>
+    <div
+      class='row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative'
+    >
+      <div class='col p-4 d-flex flex-column position-static'>
+        <p class='card-text mb-auto'>{{comment.comment}}</p>
+        <div class='mb-1 text-muted'>
+          &nbsp;&nbsp;by
+          {{comment.user.username}}
+          on
+          {{format_date comment.date_created}}</div>
+      </div>
+    </div>
+  </div>
+{{/each}}
+
+<!-- form to add new comment -->
+<div class='text-center'>
+  <div class='form-comment'>
+    <form class='comment-form'>
+      <div class='form-floating'>
+        <!-- form comment input -->
+        <textarea
+          name='comment'
+          class='form-control'
+          id='comment'
+          style='height: 80px;'
+        ></textarea>
+        <label for='comment'>Comment</label>
+      </div>
+      <!-- form submit button-->
+      <button class='w-100 btn btn-lg btn-primary' type='submit'>Submit</button>
+    </form>
+  </div>
+</div>
+
+<script src='../js/comment.js'></script>
