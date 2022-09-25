@@ -37,6 +37,7 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
 - [Deployed Link](#Link)
 - [Install Instructions](#install-instructions)
+- [Session](#session)
 - [Executing Instructions](#executing-instructions)
 - [Database Information](#database-information)
 - [Screenshot](#Screenshot)
@@ -66,6 +67,12 @@ Since the dependancies are listed within the lock file, they will autmatically i
 ```
 npm i
 ```
+
+---
+
+## Session
+
+The blog is implemented with a cookie and express-session. This enables the login to be persistant across sessions. It has been implemented with a timeout of 30mins. Where the user will be required to login again if there is no interaction with the blog.
 
 ---
 
