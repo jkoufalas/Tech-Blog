@@ -47,7 +47,7 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 ## Link
 
 The link to the deployed website of the assignment is <br>
-[https://nameless-peak-21981.herokuapp.com/](https://nameless-peak-21981.herokuapp.com/)
+[https://mytechblog.azurewebsites.net/](https://mytechblog.azurewebsites.net/)
 
 ---
 
